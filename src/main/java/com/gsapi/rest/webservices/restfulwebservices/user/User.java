@@ -1,19 +1,24 @@
-package user;
+package com.gsapi.rest.webservices.restfulwebservices.user;
 
 import java.util.Date;
 
 public class User {
-
 	private Integer id;
 	private String name;
 	private Date birthDate;
 	
-	public User(Integer id, String name, Date birthDate) {
+
+	public User(int id, String name, Date birthDate) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.birthDate = birthDate;
-	}	
+	}
+
+	@Override
+	public String toString() {
+		return "User [id=" + id + ", name=" + name + ", birthDate=" + birthDate + "]";
+	}
 
 	public Integer getId() {
 		return id;
@@ -34,11 +39,5 @@ public class User {
 		this.birthDate = birthDate;
 	}
 	
-	@Override
-	public String toString() {
-		return "User [id=" + id + ", name=" + name + ", birthDate=" + birthDate + "]";
-	}
-
-
 
 }

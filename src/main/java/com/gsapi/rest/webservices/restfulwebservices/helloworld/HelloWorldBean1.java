@@ -1,4 +1,4 @@
-package HelloWorld;
+package com.gsapi.rest.webservices.restfulwebservices.helloworld;
 
 public class HelloWorldBean1 {
 	
